@@ -16,7 +16,7 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const endpoint = "https://billteteqapi-v2.onrender.com/api/sendmail";
 
     // Form the request for sending data to the server.
     const options = {
