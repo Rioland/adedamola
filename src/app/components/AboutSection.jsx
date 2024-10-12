@@ -67,6 +67,7 @@ const AboutSection = () => {
             over 10 years of experience building innovative solutions for web
             and mobile platforms. I specialize in creating efficient, scalable,
             and user-friendly applications that solve real-world problems.
+            </p>
             <br />
             <br />
             <dl>
@@ -99,7 +100,9 @@ const AboutSection = () => {
                 </li>
               </dd>
             </dl>
-          </p>
+          
+
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
