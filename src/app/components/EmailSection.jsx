@@ -9,6 +9,9 @@ const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
+    try {
+      
+     
     e.preventDefault();
     const data = {
       email: e.target.email.value,
@@ -37,7 +40,11 @@ const EmailSection = () => {
       console.log("Message sent.");
       setEmailSubmitted(true);
     }
+  }catch (error) {
+    console.log(error);
+    }
   };
+  
 
   return (
     <section
